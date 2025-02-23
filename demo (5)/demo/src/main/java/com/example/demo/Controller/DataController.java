@@ -32,5 +32,9 @@ public class DataController {
             Map<String,Map<String,Double>> exchangeRate=ds.getAllRates();
             return ResponseEntity.ok(exchangeRate);
         }
+     @GetMapping("/test")
+    public String testAPI() {
+        return "API is running!";
+    }
 
 }
